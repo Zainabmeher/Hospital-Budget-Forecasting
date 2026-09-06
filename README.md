@@ -46,6 +46,14 @@ Power BI - 3-page dashboard
     ↓
 Business Recommendations + Action Plan 
 
+#AI Integration
+
+-Used AI-assisted analysis to sense-check forecasting logic and validate department-level findings
+
+-Leveraged AI to structure the Recommendations and Action Plan sections
+
+-AI tools used to accelerate interpretation of MoM and YoY growth patterns across 3 departments
+
 
 #Python
 
