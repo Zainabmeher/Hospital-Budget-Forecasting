@@ -14,6 +14,7 @@ Core questions this project answers:
 
 -Where should leadership focus cost control efforts?
 
+
 #Tools & Technologies 
 
 -Data Extraction - SQL; YoY growth, MoM trends, window functions, spend rankings
@@ -26,18 +27,25 @@ Core questions this project answers:
 
 #Pipeline Architecture 
 
+
 Raw Dataset (Excel - 72 rows, 3 departments, 2 years)
+
     ↓
 SQL - exploration, YoY growth, MoM trends, window functions
+
     ↓
 Python - cleaning, budget simulation, variance engineering,
           12-month linear trend forecast
+          
     ↓
 Enriched Dataset (108 rows, 16 columns - exported CSV)
+
     ↓
 Power BI - 3-page dashboard
+
     ↓
 Business Recommendations + Action Plan 
+
 
 #Python
 
@@ -61,6 +69,7 @@ The raw dataset had only 4 columns (Date, Department, Expenditure, Year). Python
 
 *Note on budget simulation: The original dataset contained expenditure data only - no planned budget column. A synthetic budget was generated using department-specific overspend factors (ICU: 10% over, Radiology: 8% over, General Ward: 6% over) based on real-world hospital cost patterns. This is documented transparently as a data engineering decision. 
 
+
 #SQL Queries
 
 -Total expenditure by department and year
@@ -76,6 +85,7 @@ The raw dataset had only 4 columns (Date, Department, Expenditure, Year). Python
 -Budget status classification using CASE WHEN
 
 -Spend ranking using RANK() window function
+
 
 #Key Findings
 
